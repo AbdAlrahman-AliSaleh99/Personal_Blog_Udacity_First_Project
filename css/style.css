@@ -5,7 +5,7 @@
 .blog-list {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -14,6 +14,9 @@
     padding: 15px;
     border-radius: 5px;
     background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .blog-card img {
@@ -35,4 +38,11 @@
     background-color: #007bff;
     border-radius: 5px;
     text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .blog-list {
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
 }
